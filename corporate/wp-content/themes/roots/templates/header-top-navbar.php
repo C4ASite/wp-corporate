@@ -1,14 +1,25 @@
-<header class="banner navbar navbar-static-top" role="banner">
+<header>
+  <div class="container">
+
+<section class="logo">
+   <div id="logo" class="span2">
+     <a href="<?php echo home_url(); ?>/">
+        <img src="/assets/img/logo.jpg" alt="<?php bloginfo('name'); ?>" />
+      </a>
+  </div>
+ 
+</section>
+<section class="banner navbar navbar-static-top" role="banner">
   <div class="navbar-inner">
-    <div class="container">
+    
       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="brand" href="<?php echo home_url(); ?>/">
+<!--       <a class="brand" href="<?php echo home_url(); ?>/">
         <?php bloginfo('name'); ?>
-      </a>
+      </a> -->
       <nav class="nav-main nav-collapse collapse" role="navigation">
         <?php
           if (has_nav_menu('primary_navigation')) :
@@ -16,6 +27,7 @@
           endif;
         ?>
       </nav>
-    </div>
   </div>
+  </section>
+   </div>
 </header>

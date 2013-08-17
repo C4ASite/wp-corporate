@@ -10,17 +10,110 @@ body { }
    Header
    ========================================================================== */
 
-.banner { }
+.banner { 
+      position: relative;
+      z-index: 10000;
+}
+.logo #logo{
+   float: none;
+   margin-left: auto;
+   margin-right: auto;
+}
+.navbar-static-top .navbar-inner{
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px; 
+  box-shadow: none;
+  border: 1px solid #D4D4D4;
+}
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus{
+   background: #4b4b4b;
+   color: #fff;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+   background: #000; /* Old browsers */
+   background: -moz-linear-gradient(top, #000 0%, #4b4b4b 100%); /* FF3.6+ */
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000), color-stop(100%,#4b4b4b)); /* Chrome,Safari4+ */
+   background: -webkit-linear-gradient(top, #000 0%,#4b4b4b 100%); /* Chrome10+,Safari5.1+ */
+   background: -o-linear-gradient(top, #000 0%,#4b4b4b 100%); /* Opera 11.10+ */
+   background: -ms-linear-gradient(top, #000 0%,#4b4b4b 100%); /* IE10+ */
+   background: linear-gradient(to bottom, #000 0%,#4b4b4b 100%); /* W3C */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#4b4b4b',GradientType=0 ); /* IE6-9 */
+   color: #fff;
+}
+.navbar .nav > li > .dropdown-menu:before {
+    background-clip: padding-box;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    float: left;
+    left: 0;
+    list-style: none outside none;
+    margin: 2px 0 0;
+    padding: 0px 0;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+}
+.navbar .nav > li > .dropdown-menu:after {
+    background-clip: padding-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius:0px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    float: left;
+    left: 0;
+    list-style: none outside none;
+    margin: 2px 0 0;
+    
+    padding: 0px 0;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+}
+.dropdown-menu{
+   min-width: 100%;
+   border-radius:0px;
+   padding: 0px 0;
+   border: none;
+}
 
-
-
+.dropdown-menu > li > a {
+    clear: both;
+    color: #fff;
+    background-color: #1a1a1a;
+    display: block;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 9px 19px;
+    white-space: nowrap;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a {
+    background-color: #4b4b4b;
+    background-image:none;
+    color: #FFFFFF;
+    text-decoration: none;
+}
 /* ==========================================================================
    Content
    ========================================================================== */
 
 .content { }
 
-
+.fill{
+   width:100%;
+   height:100%;
+   background-position:center;
+   background-size:cover;
+   position:absolute;
+   left:0;
+   right:0;
+   top:145px;
+   z-index: -100px;
+}
 
 /* ==========================================================================
    Primary Content
